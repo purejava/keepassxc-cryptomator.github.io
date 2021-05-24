@@ -1,0 +1,5 @@
+tasks:
+   - init: gem install jekyll bundler
+     command: >
+       bundle install;
+       bundle exec jekyll serve
