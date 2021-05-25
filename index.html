@@ -1,23 +1,58 @@
 ---
 layout: default
-title: The Sheep Vote
+title: KeePassXC Proxy Access
 ---
 <header>
 	<div class="container">
 		<div class="column">
 			<div>
-				<h1 class="editable">Give sheep the vote</h1>
-				<p class="editable">Sheep are the backbone of the economy yet they receive no compensation.</p>
+				<h1 class="editable">Give keepass-proxy-access the vote</h1>
+				<p class="editable">Support Software that secures you private data.</p>
 				<div class="button">
 					<a href="#donate">Donate Now</a>
 				</div>
 			</div>
 		</div>
 		<div class="column">
-			<img src="{{ site.baseurl }}/images/sheep.jpg" alt="Sheep">
+			<img src="{{ site.baseurl }}/images/keepassxc-proxy-access-1-.svg" alt="KeePassXC Proxy Access">
 		</div>
 	</div>
 </header>
+
+<div class="darker">
+	<div class="container">
+		<h2 class="editable">Players</h2>
+		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p>
+		<div class="posts">
+			{% for post in site.posts %}
+				<div class="post">
+					<img class="image" src="{{ post.featured_image }}">
+					<div class="post-content">
+						<p>{{ post.subTitle }}</p>
+						<h3>{{ post.title }}</h3>
+
+						{{ post.content }}
+						<a href="{{ post.web_site }}">Visit site</a>
+						<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<hr>
+	<blockquote>
+		<p class="quote editable">Let's bring these features together. It has the advantage that your private data as well as the passwords to access your data are stored securely and needs two software components, that connect KeePassXC to Cryptomator.</p>
+		<div class="attribute">
+			<p class="meta">
+				<span class="image"><img class="editable" src="{{ site.baseurl }}/images/ralph.jpg" alt="Ralph"></span>
+				<span class="author editable"><strong>Ralph Plawetzki</strong></span>
+			</p>
+		</div>
+	</blockquote>
+</div>
 
 <div class="container">
 	<h2 class="editable" style="text-align: center;">Why sheep need the vote</h2>
@@ -46,7 +81,7 @@ title: The Sheep Vote
 <div class="container">
 	<div class="columns">
 		<div>
-			<img src="{{ site.baseurl }}/images/sheep2.jpg" alt="Sheep">
+			<img src="{{ site.baseurl }}/images/keepassxc-proxy-access.svg" alt="KeePassXC Proxy Access">
 		</div>
 		<div>
 			<h2 class="editable">Our Mission</h2>
@@ -54,19 +89,6 @@ title: The Sheep Vote
 			<p class="editable">Leave no sheep behind. Our mission to give sheep the right to vote and have them represented in parliament. For too long sheep have been exploited for their warm wool and delicious meat. It's time to put our hooves down and baa for what's right. Give sheep the vote!</p>
 		</div>
 	</div>
-</div>
-
-<div class="container">
-	<hr>
-	<blockquote>
-		<p class="quote editable">The ultimate measure of a sheep is not where he stands in moments of comfort and convenience, but where he stands at times of challenge and controversy.</p>
-		<div class="attribute">
-			<p class="meta">
-				<span class="image"><img class="editable" src="{{ site.baseurl }}/images/wooly.jpg" alt="Wooly"></span>
-				<span class="author editable"><strong>Wooly McBaa</strong></span>
-			</p>
-		</div>
-	</blockquote>
 </div>
 
 <div class="darker">
@@ -84,26 +106,5 @@ title: The Sheep Vote
 	<h2 class="editable">Make a donation</h2>
 	<div class="donate">
 		{{ site.donation_embed }}
-	</div>
-</div>
-
-<div class="darker">
-	<div class="container">
-		<h2 class="editable">Updates</h2>
-		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p>
-		<div class="posts">
-			{% for post in site.posts %}
-				<div class="post">
-					<div class="image" style="background-image: url({{ post.featured_image}})"></div>
-					<div class="post-content">
-						<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
-						<h3>{{ post.title }}</h3>
-
-						{{ post.content }}
-						<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
-					</div>
-				</div>
-			{% endfor %}
-		</div>
 	</div>
 </div>
