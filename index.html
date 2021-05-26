@@ -7,9 +7,9 @@ title: KeePassXC Proxy Access
 		<div class="column">
 			<div>
 				<h1 class="editable">Give keepass-proxy-access the vote</h1>
-				<p class="editable">Support Software that secures you private data.</p>
+				<p class="editable">Support software that secures you private data.</p>
 				<div class="button">
-					<a href="#donate">Donate Now</a>
+					<a href="https://www.paypal.com/donate?hosted_button_id=XVX9ZM7WE4ANL">Donate Now</a>
 				</div>
 			</div>
 		</div>
@@ -44,7 +44,7 @@ title: KeePassXC Proxy Access
 <div class="container">
 	<hr>
 	<blockquote>
-		<p class="quote editable">Let's bring these features together. It has the advantage that your private data as well as the passwords to access your data are stored securely and needs two software components, that connect KeePassXC to Cryptomator.</p>
+		<p class="quote editable">Let's bring these features together. It has the advantage, that your private data as well as the passwords to access your data are stored securely. To achieve this, two software components are required, that connect KeePassXC to Cryptomator.</p>
 		<div class="attribute">
 			<p class="meta">
 				<span class="image"><img class="editable" src="{{ site.baseurl }}/images/ralph.jpg" alt="Ralph"></span>
@@ -52,6 +52,39 @@ title: KeePassXC Proxy Access
 			</p>
 		</div>
 	</blockquote>
+</div>
+
+<div class="darker">
+	<div class="container">
+		<div class="columns">
+			<div>
+				<img src="{{ site.baseurl }}/images/keepassxc-proxy-access.svg" alt="KeePassXC Cryptomator">
+			</div>
+			<div>
+				<h2 class="editable">The plug-in</h2>
+
+				<p class="editable">Cryptomator has an integrations-api, that allows to extend it. Nevertheless, this API itself had to be extended, because the extensions available for Cryptomator so far had no need to associate to Cryptomator. They are simply available on the underlying OS.</p>
+				<p class="editable">I wrote a library, that works as a connector between Cryptomator and KeePassXC and uses the extended API.</p>
+				<p class="editable"><a href="https://search.maven.org/artifact/org.purejava/keepassxc-cryptomator">Show info</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="columns">
+		<div>
+			<h2 class="editable">The back end</h2>
+
+			<p class="editable">A second library is needed. One, that enables an application to talk to KeePassXC and access its capabilities. The Java library accesses KeePassXC via its build-in proxy.</p>
+			<p class="editable">The library I wrote uses the JSON data format to communicate with KeePassXC. The underlying TweetNaCL crypto library provides the crypto_box functionality that is used to set up an encrypted and secure channel for the components to communicate with each other.</p>
+			<p class="editable">It's fast, easy to use and cross-platform.</p>
+			<p class="editable"><a href="https://search.maven.org/artifact/org.purejava/keepassxc-proxy-access">Show info</a></p>
+		</div>
+		<div>
+			<img src="{{ site.baseurl }}/images/keepassxc-proxy-access-1-.svg" width="50%" height="50%" alt="KeePassXC Proxy Access">
+		</div>
+	</div>
 </div>
 
 <div class="container">
@@ -76,35 +109,4 @@ title: KeePassXC Proxy Access
 			<p class="editable">Sheep are forced to eat grass every day of their life. How about some of variety?</p>
 		</li>
 	</ul>
-</div>
-
-<div class="container">
-	<div class="columns">
-		<div>
-			<img src="{{ site.baseurl }}/images/keepassxc-proxy-access.svg" alt="KeePassXC Proxy Access">
-		</div>
-		<div>
-			<h2 class="editable">Our Mission</h2>
-
-			<p class="editable">Leave no sheep behind. Our mission to give sheep the right to vote and have them represented in parliament. For too long sheep have been exploited for their warm wool and delicious meat. It's time to put our hooves down and baa for what's right. Give sheep the vote!</p>
-		</div>
-	</div>
-</div>
-
-<div class="darker">
-	<div class="container">
-		<h2 class="editable">Join us</h2>
-		<p class="editable" style="text-align: center;">Sign up to hear the latest news and progress in our fight for the sheep vote.</p>
-		<form action="{{ site.newsletter_action }}" method="post">
-			<input type="text" name="EMAIL" placeholder="Email">
-			<input type="submit" value="Sign up"/>
-		</form>
-	</div>
-</div>
-
-<div class="container" id="donate">
-	<h2 class="editable">Make a donation</h2>
-	<div class="donate">
-		{{ site.donation_embed }}
-	</div>
 </div>
