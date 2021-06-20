@@ -1,12 +1,12 @@
 ---
 layout: default
-title: KeePassXC Proxy Access
+title: KeePassXC Cryptomator Plug-in
 ---
 <header>
 	<div class="container">
 		<div class="column">
 			<div>
-				<h1 class="editable">Give keepass-proxy-access the vote</h1>
+				<h1 class="editable">Give the KeePassXC Cryptomator plug-in the vote</h1>
 				<p class="editable">Support software that secures you private data.</p>
 				<div class="button">
 					<a href="https://www.paypal.com/donate?hosted_button_id=XVX9ZM7WE4ANL">Donate Now</a>
@@ -63,9 +63,10 @@ title: KeePassXC Proxy Access
 			<div>
 				<h2 class="editable">The plug-in</h2>
 
-				<p class="editable">Cryptomator has an integrations-api, that allows to extend it. Nevertheless, this API itself had to be extended, because the extensions available for Cryptomator so far had no need to associate to Cryptomator. They are simply available on the underlying OS.</p>
-				<p class="editable">I wrote a library, that works as a connector between Cryptomator and KeePassXC and uses the extended API.</p>
-				<p class="editable"><a href="https://search.maven.org/artifact/org.purejava/keepassxc-cryptomator">Show info</a></p>
+				<p class="editable">Cryptomator has an integrations-api, that allows to develop plugins for Cryptomator that extend the functionality of Cryptomator.</p>
+				<p class="editable">I wrote a plug-in, that works as a connector between Cryptomator and KeePassXC and fits into the integrations-api.</p>
+				<p>With this plug-in dropped in, Cryptomator can use a KeePassXC database as a backend to store and retrieve passwords for vaults.</p>
+				<p class="editable"><a href="https://github.com/purejava/keepassxc-cryptomator">Visit on GitHub</a></p>
 			</div>
 		</div>
 	</div>
@@ -76,10 +77,10 @@ title: KeePassXC Proxy Access
 		<div>
 			<h2 class="editable">The back end</h2>
 
-			<p class="editable">A second library is needed. One, that enables an application to talk to KeePassXC and access its capabilities. The Java library accesses KeePassXC via its build-in proxy.</p>
-			<p class="editable">The library I wrote uses the JSON data format to communicate with KeePassXC. The underlying TweetNaCL crypto library provides the crypto_box functionality that is used to set up an encrypted and secure channel for the components to communicate with each other.</p>
+			<p class="editable">A second library is needed, which is integrated into the plug-in mentioned above. It enables an application to talk to KeePassXC and access its capabilities. The Java library accesses KeePassXC via its build-in proxy.</p>
+			<p class="editable">This library I wrote uses the JSON data format to communicate with KeePassXC. The underlying TweetNaCL crypto library provides the crypto_box functionality that is used to set up an encrypted and secure channel for the components to communicate with each other.</p>
 			<p class="editable">It's fast, easy to use and cross-platform.</p>
-			<p class="editable"><a href="https://search.maven.org/artifact/org.purejava/keepassxc-proxy-access">Show info</a></p>
+			<p class="editable"><a href="https://github.com/purejava/keepassxc-proxy-access">Visit on GitHub</a></p>
 		</div>
 		<div>
 			<img src="{{ site.baseurl }}/images/keepassxc-proxy-access-1-.svg" width="50%" height="50%" alt="KeePassXC Proxy Access">
@@ -88,25 +89,27 @@ title: KeePassXC Proxy Access
 </div>
 
 <div class="container">
-	<h2 class="editable" style="text-align: center;">Why sheep need the vote</h2>
+	<h2 class="editable" style="text-align: center;">Additional information</h2>
 
 	<ul class="thirds">
 		<li>
 			<div class="image">{% include icons/site.html icon="population" %}</div>
-			<h3 class="editable">Population</h3>
-			<p class="editable">New Zealand has a human population of just 4.5M while there are 70M sheep. </p>
+			<h3 class="editable">Easy to use</h3>
+			<p class="editable">The plug-in comes with a convienient installer, that works cross-platform. </p>
+			<p class="editable"><a href="https://github.com/purejava/keepassxc-proxy-access">Download</a></p>
 		</li>
 
 		<li>
 			<div class="image">{% include icons/site.html icon="economy" %}</div>
-			<h3 class="editable">Economy</h3>
-			<p class="editable">Sheep are the backbone of the economy yet they receive no compensation.</p>
+			<h3 class="editable">Save to use</h3>
+			<p class="editable">The software components get improved continuously.</p>
 		</li>
 
 		<li>
 			<div class="image">{% include icons/site.html icon="conditions" %}</div>
-			<h3 class="editable">Work Conditions</h3>
-			<p class="editable">Sheep are forced to eat grass every day of their life. How about some of variety?</p>
+			<h3 class="editable">Love to use</h3>
+			<p class="editable">Like it?</p>
+			<p>You can <a href="https://www.paypal.com/donate?hosted_button_id=XVX9ZM7WE4ANL">support</a> the development with a donation.</p>
 		</li>
 	</ul>
 </div>
