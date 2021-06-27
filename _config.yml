@@ -4,6 +4,7 @@
 title: 
 url: https://plugin.purejava.org
 baseurl: /
+google_analytics_key: ''
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
@@ -13,6 +14,7 @@ author:
   email: ralph@purejava.org
   twitter: RPlawetzki
 
+environment: production
 # -----
 # Build
 
