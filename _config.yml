@@ -61,6 +61,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENCE
+  - screenshot-overview.png
 
 # -----------
 # CloudCannon
