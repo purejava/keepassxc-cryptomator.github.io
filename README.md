@@ -20,4 +20,4 @@
 from [CloudCannon/cause-jekyll-template](https://github.com/CloudCannon/cause-jekyll-template)
 
 # Copyright
-Copyright (C) 2021 Ralph Plawetzki
+Copyright (C) 2021-2022 Ralph Plawetzki
