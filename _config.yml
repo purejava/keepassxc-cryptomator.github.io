@@ -1,11 +1,11 @@
 # ----
 # Site
 
-title: 
+title:
 url: https://plugin.purejava.org
 baseurl: /
 google_analytics_key: ''
-plugin_version: '0.0.4'
+plugin_version: '1.0.0'
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
@@ -50,8 +50,8 @@ defaults:
     values:
       layout: "default"
 
-donation_embed: 
-newsletter_action: 
+donation_embed:
+newsletter_action:
 
 plugins:
   - jekyll-sitemap
