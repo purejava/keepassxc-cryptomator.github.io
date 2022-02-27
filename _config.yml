@@ -5,7 +5,7 @@ title:
 url: https://plugin.purejava.org
 baseurl: /
 google_analytics_key: ''
-plugin_version: '1.0.1'
+plugin_version: '1.1.0'
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
