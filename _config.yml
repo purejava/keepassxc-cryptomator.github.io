@@ -13,7 +13,7 @@ description: Store Cryptomator vault passwords in KeePassXC.
 author:
   name: Ralph Plawetzki
   email: ralph@purejava.org
-  twitter: RPlawetzki
+  mastodon: '@purejava'
 
 environment: production
 # -----
