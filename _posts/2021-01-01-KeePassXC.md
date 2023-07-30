@@ -2,7 +2,7 @@
 title: KeePassXC
 author_staff_member: ralph-plawetzki
 sub_title: Password Manager
-featured_image: https://keepassxc.org/images/keepassxc-logo.svg
+featured_image: https://keepassxc.org/assets/img/keepassxc.svg
 web_site: https://keepassxc.org/
 ---
 Never forget a password again.
